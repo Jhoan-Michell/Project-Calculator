@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/css.css">
+    <link rel="shortcut icon" href="   https://cdn-icons-png.flaticon.com/512/2822/2822971.png " type="image/x-icon">
+    <title>Projecto Calculator</title>
+</head>
+<body>
+    <div id="background">
+    <div id="Calculator" class="cal">
+    <section>
+        <header>
+            <h1 style="font-size: 3.3rem;">Calculator</h1>
+        </header>
+        <table>
+            <tr>
+                <tr>
+                    <div id="screen"><p id="resultado" style="overflow: hidden;"></p></div>
+                </tr>
+                <td><button onclick="inserir('7')">7</button></td>
+                <td><button onclick="inserir('8')">8</button></td>
+                <td><button onclick="inserir('9')">9</button></td>
+                <td><button onclick="clearr()">C</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="inserir('4')">4</button></td>
+                <td><button onclick="inserir('5')">5</button></td>
+                <td><button onclick="inserir('6')">6</button></td>
+                <td><button style="padding-right: 32.5px;" onclick="inserir('/')">/</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="inserir('1')">1</button></td>
+                <td><button onclick="inserir('2')">2</button></td>
+                <td><button onclick="inserir('3')">3</button></td>
+                <td><button style="padding-right: 25.5px;" onclick="inserir('*')">x</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="inserir('0')">0</button></td>
+                <td><button style="font-size: 1.97rem;" onclick="resultado()">=</button></td>
+                <td><button style="font-size: 1.97rem;" onclick="inserir('+')">+</button></td>
+                <td><button style="padding-right: 30.5px;" onclick="inserir('-')">-</button></td>
+            </tr>
+        </table>
+    </section>
+    </div>
+    <div><table id="historico" class="cal2">
+        <tr>
+            <th style="margin: 20px; position: absolute;">Data</th>
+            <th style="margin: 20px; position: absolute; left: 50%;">Operação</th>
+        </tr>
+        <div id="show"></div>
+    </table></div>
+    </div>
+    <script src="/asset/java.js"></script>
+</body>
+</html>

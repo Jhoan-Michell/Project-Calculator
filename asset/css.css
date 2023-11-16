@@ -1,0 +1,95 @@
+*:root {
+    --colorBackground:  linear-gradient(to left, #64CCC5, #176B87, #04364A)
+}
+
+body {
+    box-sizing: border-box;
+}
+
+#background {
+    display: flex;
+    justify-content: space-between;
+    background: var(--colorBackground);
+    background-size: 400% 500%;
+    height: 100vh;
+    animation: animation 12s ease infinite;
+}
+
+h1 {
+    display: inline;
+    color: white;
+    background: var(--colorBackground);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#screen {
+    border-radius: 5px;
+        height: 50px;
+        width: 245px;
+        background-color: white;
+}
+
+.cal {
+    border-radius: 15px;
+    padding: 1rem;
+    background-color: rgba(31, 31, 31, 0.8);
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%); 
+}
+
+
+#historico {
+        border-radius: 15px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        right: 30%;
+        transform: translate(50%, -50%);
+        width: 281px;
+        height: 501px; 
+        background-color: rgba(31, 31, 31, 0.8);
+        font-size: 1rem; 
+}
+
+
+button {
+    margin: 0 0 7px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    transition: .5s;
+    box-shadow: 0 3px 0 #64CCC5;
+}
+
+button:active {
+    box-shadow: none;
+    transform: translateY(3px);
+}
+#show {
+    border-color: white;
+    margin: 5px ;
+    display: flex;
+    flex-direction: row;
+    top: 50%;
+    right: 30%;
+    transform: translate(50%, -50%);
+}
+
+
+@keyframes animation {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 100%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
